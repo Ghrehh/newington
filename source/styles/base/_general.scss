@@ -1,0 +1,97 @@
+///////////////////
+//GENERAL/////////
+/////////////////
+
+h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
+  font-family: "adelle-sans";
+}
+
+.body-writing {
+  color: $charcoal;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+.small-header {
+  @extend .body-writing;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.small {
+  @extend .body-writing;
+  font-size: 13px;
+}
+
+.button-template {
+  text-decoration: none;
+  padding: 7px 16px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  line-height: 27px;
+}
+
+.orange-button {
+  @extend .button-template;
+  background-color: $orange;
+  color: $charcoal;
+}
+
+.orange-button:hover {
+  background-color: $dark-orange;
+}
+
+.white-button {
+  @extend .button-template;
+  background-color: white;
+  color: $charcoal;
+}
+
+.white-button:hover {
+  background-color: $light-grey;
+}
+
+//the colored background at the top of each page, this gets extended and color added
+#page-title-section {
+  padding: 63px 0 75px;
+}
+
+//the white about/what we do/projects heading that appears on each page
+//currentlys looks theres on one of these, so it's an id
+#page-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 9px;
+  text-align: center;
+
+}
+
+//the dark text large header that goes undernearth the page title
+#page-description {
+
+  color: $charcoal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align:center;
+
+}
+
+
+.section-header {
+  color: $charcoal;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-body {
+  @extend .body-writing;
+  display: block;
+  margin: 0 auto 60px;
+  max-width: 570px
+}
