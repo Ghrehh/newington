@@ -146,7 +146,8 @@ main {
 #support-newington {
   max-width: 914px;
   margin: auto;
-  background-color: #009b52; }
+  background-color: #009b52;
+  margin-bottom: 55px; }
   #support-newington .top-section {
     padding: 34px 40px 40px;
     box-sizing: border-box; }
@@ -202,42 +203,48 @@ main {
       margin-top: 30px;
       flex: 0 0 100%;
       padding: 9px 35px 12px; }
+  #support-newington #heart {
+    position: relative;
+    width: 43.75px;
+    height: 35px; }
+  #support-newington #heart:before, #support-newington #heart:after {
+    position: absolute;
+    content: "";
+    left: 21.875px;
+    top: 0;
+    width: 21.875px;
+    height: 35px;
+    background: #a72a32;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  #support-newington #heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; }
 
-#heart {
-  position: relative;
-  width: 43.75px;
-  height: 35px; }
-
-#heart:before, #heart:after {
-  position: absolute;
-  content: "";
-  left: 21.875px;
-  top: 0;
-  width: 21.875px;
-  height: 35px;
-  background: #a72a32;
-  -moz-border-radius: 50px 50px 0 0;
-  border-radius: 50px 50px 0 0;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%; }
-
-#heart:after {
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  transform-origin: 100% 100%; }
+#our-teams {
+  width: 1014px;
+  margin: auto; }
+  #our-teams .heading {
+    text-align: center;
+    margin-bottom: 11px; }
+  #our-teams .underline {
+    margin: auto; }

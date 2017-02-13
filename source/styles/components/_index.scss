@@ -2,6 +2,7 @@
   max-width: $small-width;
   margin: auto;
   background-color: $green;
+  margin-bottom: 55px;
 
   .top-section {
     padding: 34px 40px 40px;
@@ -95,16 +96,30 @@
     }
 
   }
+
+  //from https://css-tricks.com/examples/ShapesOfCSS/ via Nicolas Gallagher
+
+  $hrt-h: 35px;
+  $hrt-w: (($hrt-h / 8) * 5);
+
+  $hrt-c: $red;
+
+  #heart { position: relative; width: $hrt-w * 2; height: $hrt-h; }
+  #heart:before, #heart:after { position: absolute; content: ""; left: $hrt-w; top: 0; width: $hrt-w; height: $hrt-h; background: $red; -moz-border-radius: 50px 50px 0 0; border-radius: 50px 50px 0 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%; }
+  #heart:after { left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; transform-origin :100% 100%; }
+
 }
 
+#our-teams {
+  width: $teams-width;
+  margin: auto;
 
-//from https://css-tricks.com/examples/ShapesOfCSS/ via Nicolas Gallagher
+  .heading {
+    text-align: center;
+    margin-bottom: 11px;
+  }
 
-$hrt-h: 35px;
-$hrt-w: (($hrt-h / 8) * 5);
-
-$hrt-c: $red;
-
-#heart { position: relative; width: $hrt-w * 2; height: $hrt-h; }
-#heart:before, #heart:after { position: absolute; content: ""; left: $hrt-w; top: 0; width: $hrt-w; height: $hrt-h; background: $red; -moz-border-radius: 50px 50px 0 0; border-radius: 50px 50px 0 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%; }
-#heart:after { left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; transform-origin :100% 100%; }
+  .underline {
+    margin: auto;
+  }
+}
