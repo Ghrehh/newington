@@ -1,97 +1,135 @@
-///////////////////
-//GENERAL/////////
-/////////////////
 
-h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
+p,li,a,input,form,textarea {
   font-family: "adelle-sans";
 }
 
-.body-writing {
+h1,h2,h3,h4,h5,h6 {
+  font-family: "adelle";
+}
+
+.body-text {
   color: $charcoal;
   font-size: 19px;
-  line-height: 27px;
+  line-height: 27.9px;
 }
 
-.small-header {
-  @extend .body-writing;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.small {
-  @extend .body-writing;
-  font-size: 13px;
-}
-
-.button-template {
-  text-decoration: none;
-  padding: 7px 16px;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 4px;
-  border: none;
-  line-height: 27px;
-}
-
-.orange-button {
-  @extend .button-template;
-  background-color: $orange;
+.heading {
   color: $charcoal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 39.6px;
+
 }
 
-.orange-button:hover {
-  background-color: $dark-orange;
+.small-heading {
+  color: $charcoal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 26px;
+}
+
+.underline {
+  background-color: $green;
+  height: 7px;
+  width: 74px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 19px;
+  display: inline-block;
+  padding: 11px 35px 12px;
+  border-radius: 5px;
+  line-height: 21px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .white-button {
-  @extend .button-template;
-  background-color: white;
+  @extend .button;
   color: $charcoal;
+  background-color: white;
 }
 
 .white-button:hover {
-  background-color: $light-grey;
+  background-color: $orange;
 }
 
-//the colored background at the top of each page, this gets extended and color added
-#page-title-section {
-  padding: 63px 0 75px;
-}
-
-//the white about/what we do/projects heading that appears on each page
-//currentlys looks theres on one of these, so it's an id
-#page-title {
+.green-button {
+  @extend .button;
   color: white;
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 9px;
-  text-align: center;
+  background-color: $green;
 
 }
 
-//the dark text large header that goes undernearth the page title
-#page-description {
-
-  color: $charcoal;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 65px;
-  text-align:center;
-
+.green-button:hover {
+  background-color: $dark-green;
 }
 
-
-.section-header {
-  color: $charcoal;
-  font-size: 35px;
+.field {
   font-weight: 700;
-  text-align: center;
+  font-size: 19px;
+  display: inline-block;
+  padding: 11px 15px 12px;
+  border-radius: 5px;
+  line-height: 21px;
+  border: none;
+  box-sizing: border-box;
 }
 
-.section-body {
-  @extend .body-writing;
-  display: block;
-  margin: 0 auto 60px;
-  max-width: 570px
+nav {
+  background-color: $charcoal;
+  box-sizing:border-box;
+  display: flex;
+  align-items: center;
+  padding: 63px 0px;
+  justify-content: space-between;
+
+  img {
+    height: 175px;
+  }
+
+  ul {
+    margin: 50px;
+    li {
+      display: inline-block;
+
+      .fa {
+        color: white;
+        font-size: 35px;
+        margin: 0px 3px;
+      }
+    }
+
+  }
+
+  .hidden-icons {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+header {
+  display: flex;
+  max-width: $small-width;
+  margin: auto;
+  box-sizing:border-box;
+  padding: 54px 0px;
+
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  .heading-container {
+    flex: 0 0 31.8%;
+  }
+
+  .body {
+
+  }
+}
+
+main {
+  padding-bottom: 200px;
 }

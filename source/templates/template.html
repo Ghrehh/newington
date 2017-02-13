@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BurnsBros</title>
+  <title>Newington</title>
+  <link href="styles/font-awesome.min.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
 
-  <!--<link href="styles/main.css" rel="stylesheet">-->
+  <script src="scripts/script.js"></script>
 
-  <!--<script src="scripts/script.js"></script>-->
+  <script src="https://use.typekit.net/hnz6fnp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
 </head>
 <body>
-
-
-  {% block content %} {% endblock %}
-
+  
+  <main>
+    {% include "templates/partials/_nav.html" %}
+    {% block content %} {% endblock %}
+    {% include "templates/partials/_footer.html" %}
+  </main>
 
 </body>
 </html>
