@@ -7,6 +7,10 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "adelle";
 }
 
+a {
+  color: $blue;
+}
+
 .body-text {
   color: $charcoal;
   font-size: 19px;
@@ -131,5 +135,5 @@ header {
 }
 
 main {
-  padding-bottom: 200px;
+  padding-bottom: 1000px;
 }

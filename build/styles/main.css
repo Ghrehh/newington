@@ -51,6 +51,9 @@ p, li, a, input, form, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "adelle"; }
 
+a {
+  color: #009cd7; }
+
 .body-text {
   color: #333333;
   font-size: 19px;
@@ -141,13 +144,15 @@ header {
     flex: 0 0 31.8%; }
 
 main {
-  padding-bottom: 200px; }
+  padding-bottom: 1000px; }
 
 #support-newington {
   max-width: 914px;
   margin: auto;
   background-color: #009b52;
-  margin-bottom: 55px; }
+  margin-bottom: 55px;
+  border-radius: 3px;
+  overflow: hidden; }
   #support-newington .top-section {
     padding: 34px 40px 40px;
     box-sizing: border-box; }
@@ -241,10 +246,93 @@ main {
     transform-origin: 100% 100%; }
 
 #our-teams {
-  width: 1014px;
+  width: 1024px;
   margin: auto; }
   #our-teams .heading {
     text-align: center;
     margin-bottom: 11px; }
   #our-teams .underline {
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 57px; }
+  #our-teams .team {
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    overflow: hidden; }
+    #our-teams .team .information {
+      flex: 0 0 50%;
+      background-color: #f3f3f3;
+      padding: 46px 51px 0px 62px;
+      box-sizing: border-box; }
+      #our-teams .team .information .small-heading {
+        font-size: 24px;
+        margin-bottom: 35px; }
+      #our-teams .team .information .icon-buttons-container {
+        display: flex;
+        justify-content: space-between; }
+        #our-teams .team .information .icon-buttons-container .icon-button {
+          background-color: #009b52;
+          text-align: center;
+          padding: 30px 0px;
+          display: inline-block;
+          box-sizing: border-box;
+          width: 120px;
+          height: 120px;
+          border-radius: 5px; }
+          #our-teams .team .information .icon-buttons-container .icon-button .image-container {
+            height: 39px; }
+            #our-teams .team .information .icon-buttons-container .icon-button .image-container img {
+              position: relative;
+              top: 1px; }
+          #our-teams .team .information .icon-buttons-container .icon-button .body-text {
+            margin-top: 14px;
+            color: white;
+            font-size: 18px; }
+        #our-teams .team .information .icon-buttons-container .icon-button:hover {
+          background-color: #333333; }
+      #our-teams .team .information .contact-text {
+        color: #9E9E9E;
+        font-size: 16px;
+        font-style: italic; }
+    #our-teams .team .right {
+      padding: 46px 62px 0px 51px; }
+    #our-teams .team .middle {
+      flex: 0 0 100%;
+      background-color: #f3f3f3;
+      padding: 46px 51px 35px 62px;
+      box-sizing: border-box;
+      text-align: center; }
+      #our-teams .team .middle .icon-buttons-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 33px; }
+        #our-teams .team .middle .icon-buttons-container .icon-button {
+          margin: 0px 9.5px; }
+
+#archive {
+  max-width: 914px;
+  margin: auto;
+  background-color: #333333;
+  margin-bottom: 55px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 43px 40px 48px;
+  box-sizing: border-box; }
+  #archive .top-section {
+    display: flex; }
+    #archive .top-section .heading {
+      color: white;
+      margin-bottom: 14px; }
+    #archive .top-section .badge-2 {
+      margin-left: auto;
+      height: 111px;
+      margin-right: 20px; }
+    #archive .top-section .badge-1 {
+      height: 108px; }
+  #archive .underline {
+    margin-bottom: 35px; }
+  #archive .body-text {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 43px; }

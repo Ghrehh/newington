@@ -3,6 +3,8 @@
   margin: auto;
   background-color: $green;
   margin-bottom: 55px;
+  border-radius: 3px;
+  overflow: hidden;
 
   .top-section {
     padding: 34px 40px 40px;
@@ -121,5 +123,141 @@
 
   .underline {
     margin: auto;
+    margin-bottom: 57px;
+  }
+
+  .team {
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    .information {
+      flex: 0 0 50%;
+      background-color: #f3f3f3;
+      padding: 46px 51px 0px 62px;
+      box-sizing: border-box;
+
+      .small-heading {
+        font-size: 24px;
+        margin-bottom: 35px;
+      }
+
+      .icon-buttons-container {
+        display: flex;
+        justify-content: space-between;
+
+
+
+        .icon-button {
+          background-color: $green;
+          text-align: center;
+          padding: 30px 0px;
+          display: inline-block;
+          box-sizing: border-box;
+          width: 120px;
+          height: 120px;
+
+          border-radius: 5px;
+
+          .image-container {
+            height: 39px;
+
+            img {
+              position: relative;
+              top: 1px;
+            }
+          }
+
+          .body-text {
+            margin-top: 14px;
+            color: white;
+            font-size: 18px;
+          }
+        }
+
+        .icon-button:hover {
+          background-color: $charcoal;
+        }
+      }
+
+      .contact-text {
+        color: #9E9E9E;
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+
+    .right {
+      padding: 46px 62px 0px 51px;
+    }
+
+    .middle {
+      flex: 0 0 100%;
+      background-color: #f3f3f3;
+      padding: 46px 51px 35px 62px;
+      box-sizing: border-box;
+      text-align: center;
+
+      .icon-buttons-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 33px;
+
+        .icon-button {
+          margin: 0px 9.5px;
+        }
+      }
+
+    }
+
+    .team-photo {
+      //flex: 0 0 50%;
+    }
+
+  }
+
+
+}
+
+#archive {
+  max-width: $small-width;
+  margin: auto;
+  background-color: $charcoal;
+  margin-bottom: 55px;
+  border-radius: 3px;
+  overflow: hidden;
+
+  padding: 43px 40px 48px;
+  box-sizing: border-box;
+
+  .top-section {
+    display: flex;
+
+
+    .heading {
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .badge-2 {
+      margin-left: auto;
+      height: 111px;
+      margin-right: 20px;
+    }
+
+    .badge-1 {
+      height: 108px;
+    }
+  }
+  .underline {
+    margin-bottom: 35px;
+  }
+
+  .body-text {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 43px;
   }
 }
