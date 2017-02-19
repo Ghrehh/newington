@@ -134,6 +134,38 @@ header {
   }
 }
 
-main {
-  padding-bottom: 1000px;
+footer {
+  background-color: $charcoal;
+  display:flex;
+  justify-content: space-between;
+  padding: 81px 0px;
+  align-items: center;
+
+  .body-text {
+    color: white;
+    margin-bottom: 13px;
+  }
+
+  .social-media, .burns-bros {
+    width: 220px;
+    text-align:center;
+  }
+
+  .burns-bros {
+
+  }
+
+  ul {
+
+    li {
+      display: inline-block;
+
+      .fa {
+        color: white;
+        font-size: 35px;
+        margin: 0px 3px;
+      }
+    }
+
+  }
 }

@@ -143,8 +143,24 @@ header {
   header .heading-container {
     flex: 0 0 31.8%; }
 
-main {
-  padding-bottom: 1000px; }
+footer {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding: 81px 0px;
+  align-items: center; }
+  footer .body-text {
+    color: white;
+    margin-bottom: 13px; }
+  footer .social-media, footer .burns-bros {
+    width: 220px;
+    text-align: center; }
+  footer ul li {
+    display: inline-block; }
+    footer ul li .fa {
+      color: white;
+      font-size: 35px;
+      margin: 0px 3px; }
 
 #support-newington {
   max-width: 914px;
@@ -247,7 +263,8 @@ main {
 
 #our-teams {
   width: 1024px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 45px; }
   #our-teams .heading {
     text-align: center;
     margin-bottom: 11px; }
@@ -313,7 +330,7 @@ main {
   max-width: 914px;
   margin: auto;
   background-color: #333333;
-  margin-bottom: 55px;
+  margin-bottom: 58px;
   border-radius: 3px;
   overflow: hidden;
   padding: 43px 40px 48px;
@@ -336,3 +353,43 @@ main {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 43px; }
+
+#digital-transformation {
+  max-width: 914px;
+  margin: auto;
+  background-color: #fc9e33;
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 54px; }
+  #digital-transformation .left-section {
+    flex: 0 0 50%;
+    padding: 45px 40px 48px;
+    box-sizing: border-box; }
+    #digital-transformation .left-section .heading-container {
+      display: flex;
+      margin-bottom: 12px; }
+      #digital-transformation .left-section .heading-container .fa-bolt {
+        color: #333333;
+        display: inline-block;
+        font-size: 69px;
+        margin-right: 13px;
+        position: relative;
+        top: 3px; }
+      #digital-transformation .left-section .heading-container .heading {
+        display: inline-block; }
+    #digital-transformation .left-section .underline {
+      background-color: #333333; }
+    #digital-transformation .left-section .body-text {
+      margin-top: 35px;
+      line-height: 28px; }
+  #digital-transformation .right-section img {
+    display: block; }
+
+#sponsorship-opportunities {
+  margin: auto;
+  width: 914px;
+  text-align: center;
+  margin-bottom: 61px; }
+  #sponsorship-opportunities .small-heading {
+    font-size: 24px;
+    margin-bottom: 29px; }
